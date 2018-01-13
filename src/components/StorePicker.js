@@ -5,11 +5,11 @@ class StorePicker extends React.Component {
 	goToStore(event){
 		event.preventDefault();
 		//grab text from box
-		const iDforStore = this.storeInput.value;
+		const storeId = this.storeInput.value;
 		console.log(this.storeInput.value);
 
 		//transition from / to storeid
-		this.context.router.transitionTo(`/store/${iDforStore}`);
+		this.context.router.transitionTo(`/store/${storeId}`);
 	}
   render(){
     return (
